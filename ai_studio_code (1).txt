@@ -1,0 +1,18 @@
+app/
+├── build.gradle.kts                           // Dependencies & Compose configuration
+└── src/main/
+    ├── AndroidManifest.xml                    // App manifest
+    └── java/com/example/composeauth/
+        ├── MainActivity.kt                    // Main entry point
+        ├── data/
+        │   └── UserManager.kt                 // SharedPreferences local storage helper
+        ├── navigation/
+        │   ├── Screen.kt                      // Navigation routes (sealed class)
+        │   └── AppNavGraph.kt                 // NavHost & screen navigation
+        ├── ui/
+        │   ├── screens/
+        │   │   ├── LoginScreen.kt             // Login UI, validation, & password hiding
+        │   │   ├── SignupScreen.kt            // Signup UI, confirmation check, & local save
+        │   │   └── DashboardScreen.kt         // Dashboard UI, username greeting, & logout
+        │   └── theme/
+        │       └── Theme.kt                   // Material 3 styling
